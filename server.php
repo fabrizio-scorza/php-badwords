@@ -1,7 +1,10 @@
 <?php
 // dichiarazione delle variabili ricevute dal lato client
-$message = $_GET["message"];
-$badword = $_GET["badword"];
+// $message = $_GET["message"];
+// $badword = $_GET["badword"];
+// passaggio al metodo POST
+$message = $_POST["message"];
+$badword = $_POST["badword"];
 
 // assegno ad una variabile il paragrafo censurato
 $censured = str_replace($badword, '***', $message, $count);
